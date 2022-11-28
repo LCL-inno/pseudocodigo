@@ -11,8 +11,7 @@
 
 ## 02 - operaciones aritméticas básicas (suma y resta) 
 ### Suma y resta dos operados introducidos
- Algoritmo de un programa que tome dos n�meros cualesquiera y muestre por pantalla:
+ Algoritmo de un programa que tome dos números cualesquiera y muestre por pantalla:
  1. La suma de los mismos, y, posteriormente,
  2. su resta
 
- 
