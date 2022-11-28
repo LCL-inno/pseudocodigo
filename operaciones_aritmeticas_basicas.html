@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Operaciones aritméticas básicas</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <script>
+        // Algoritmo de un programa que tome dos n�meros cualesquiera y
+        // muestre por pantalla:
+        // 1. - La suma de los mismos, y, posteriormente,
+        // 2. - su resta
+        function operaciones_aritmeticas_basicas() { //Snake Case
+            // Declaraci�n de variables == reservar en memoria
+            let num01 = 0;
+            let num02 = 0;
+            let suma = 0, resta = 0;
+            // Enunciado del algoritmo en una ventana modal:
+            alert("Programa: OPERACIONES ARITMÉTICAS BÁSICA (suma y resta) de dos operandos");
+            document.write(`<h1> Programa: OPERACIONES ARITMÉTICAS BÁSICA (suma y resta) de dos operandos </h1>`);
+            // Tomar dos números cualesquiera
+            // mediante una ventana modal de inserción de datos
+            num01 = window.prompt("Por favor, introduzca el primer número a operar:", 10);
+            num02 = window.prompt("A continuación, introduzca el segundo operando:", 2);
+
+            // y operar aritméticamente con ellos.
+            suma = Number(num01) + Number(num02);
+            resta = num01 - num02; // expresión --> toda instrucción devuelve algo
+
+            // TEMPLATE LITERALS (PLANTILLA DE CARACTERES LITERALES) de JavaScript
+            // Sacar por pantalla:
+            // 1. - Suma de los números introducidos
+            // 2. - Resta de los números introducidos
+            alert(`Primera operación aritmética: SUMA\nEl resultado de la suma es ${num01+num02} (= ${num01}  + ${num02} ).\nSegunda operación aritmética: RESTA o DIFERENCIA\nEl resultado de la resta es ${num01-num02} (= ${num01} - ${num02} ).`);
+            
+            // Sacar por pantalla:
+            document.write(`<p> El primer número indicado a operar: ${num01}</p>`);
+            document.write(`<p> El segundo operando introducido: ${num02} </p>`);
+            document.write(`<p> </p>`);
+            document.write(`<p> </p>`);
+            document.write(`<p> Primera operación aritmética: SUMA\nEl resultado de la suma es ${num01+num02} (= ${num01}  + ${num02} ).</p>`);
+            document.write(`<p> Segunda operación aritmética: RESTA o DIFERENCIA\nEl resultado de la resta es ${num01-num02} (= ${num01} - ${num02} ). </p>`);
+
+        }
+
+        //window.onload(operaciones_aritmeticas_basicas());
+        document.onload(operaciones_aritmeticas_basicas());
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

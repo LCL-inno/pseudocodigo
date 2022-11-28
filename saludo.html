@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    <script>
+
+        function resultado(){
+            // Declaración de variables
+            // ------------------------
+            // JavaScript es dinámicamente tipado
+            let nombre = "", apellidos = ""; //string
+            let edad = 0; // number
+            let out = "";
+
+            // Ventana modal o ventada de diálogo
+            // comando: windows.prompt o prompt
+            // prompt lleva dos argumentos: mensaje, valor-defecto
+            // Primer argumento es el mensaje: "Por favor, introduzca su nombre:"
+            // Segundo argumento (opcional): Texto por defecto
+            nombre = window.prompt("Por favor, introduzca su nombre:","Leticia");
+            apellidos = window.prompt("Introduzca sus apellidos:","Carreño");
+            edad = prompt("Por favor, introduzca su edad:",36);
+
+            out = "Hola, me llamo "+ nombre+" "+apellidos+" y tengo "+edad+" años.";
+
+            alert(out);
+        }
+
+        window.onload(resultado("result"));
+    </script>
+</head>
+<body class="body">
+    <main class="container">
+        <p class="info-prog"> Este programa le solicitará sus datos personales.</p>
+        <p class="info-prog"> Le devolverá la información recogida en una frase.</p>
+    </main>
+
+</body>
+</html>
