@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área triángulo</title>
+
+    <script>
+        
+        //Algoritmo que saca por HTML el contenido de un ñarea de un triángulo
+        function area_triangulo_outhtml(altura,base,area){
+            document.write(`<h1> Operaciones aritméticas: </h1>`);
+            document.write(`<h2> Formas geométricas </h2>`);
+            document.write(`<h3> Triángulo </h3>`);
+            document.write(`<h4> <strong>Cálculo del área de un triángulo </strong>
+                dada su altura y su base. </h4>`);
+            document.write(`<p> La altura introducida del triángulo es ${altura}. </p>`);
+            document.write(`<p> La base indicada del triángulo es ${base}. </p>`);
+            document.write(`<p> El área del triángulo ( base * altura / 2 ) es ${area}. </p>`);
+        }
+
+        // Algoritmo de un programa que permita calcular 
+        // el área de un triángulo
+        // dada una altura y una base
+        function area_triangulo_dada_h_b(){
+            let altura = 0;
+            let base = 0;
+            let area = 0;
+            
+            altura = window.prompt("Inserte la altura del triángulo:",4);
+            base = window.prompt("Inserte la base del triángulo:",4);
+            
+            //Operamos
+            area = altura*base/2;
+            
+            alert(`El área del triángulo dada su altura ${altura} y su base ${base} es ${area}`);
+
+            area_triangulo_outhtml(altura,base,area);
+            
+        } 
+
+        document.onload(area_triangulo_dada_h_b());
+            
+    </script>
+</head>
+<body>
+
+
+    
+</body>
+</html>
