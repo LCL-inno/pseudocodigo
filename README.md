@@ -15,3 +15,10 @@
  1. La suma de los mismos, y, posteriormente,
  2. su resta
 
+
+## 03 - operaciones aritméticas básicas (área de un triángulo) 
+### El área de un triángulo dada su altura y su base introducidos
+ Algoritmo de un programa que dada:
+  - su altura y
+  - su base
+ calcule el área del triángulo sacándolo por pantalla.
